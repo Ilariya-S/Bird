@@ -1,0 +1,199 @@
+{
+   "data": [
+      {
+         "file_name": "7c2a62e1-5873-441c-9818-05f709767d52.jpg",
+         "date": "20-11-2024 18:19:01",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Eurasian Hoopoe",
+            "latin_name": "Upupa epops",
+            "probability": 85
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 117110338186921900
+      },
+      {
+         "file_name": "ff2ec056-2099-4a81-8fbc-1e65ba6b5528.jpg",
+         "date": "20-11-2024 18:19:13",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Little Owl",
+            "latin_name": "Athene noctua",
+            "probability": 85
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 236824177719337014
+      },
+      {
+         "file_name": "4ab1d793-cbe3-4701-8b3d-7d2c687355dc.jpg",
+         "date": "20-11-2024 18:19:20",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Eurasian Tree Sparrow",
+            "latin_name": "Passer montanus",
+            "probability": 95
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 323756582008873201
+      },
+      {
+         "file_name": "758c6193-7c08-4c13-9763-f6da13fd4142.jpg",
+         "date": "20-11-2024 18:30:38",
+         "is_check": true,
+         "result": {
+            "object": "toy",
+            "common_name": "Rubber Duck",
+            "latin_name": "Not applicable",
+            "probability": 0
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 666467030384941138
+      },
+      {
+         "file_name": "fc7247ea-411c-46d6-b517-1e3cd9f754ea.jpg",
+         "date": "20-11-2024 18:41:30",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Sulphur-crested Cockatoo",
+            "latin_name": "Cacatua galerita",
+            "probability": 1
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 274799053590317602
+      },
+      {
+         "file_name": "4d255be4-d2de-4a16-bfcc-83ddae859b10.jpg",
+         "date": "21-11-2024 08:24:14",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Song Thrush",
+            "latin_name": "Turdus philomelos",
+            "probability": 95
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 252157736647038450
+      },
+      {
+         "file_name": "e993d2d5-db00-4af8-82ca-33d63bc19558.jpg",
+         "date": "21-11-2024 08:24:21",
+         "is_check": true,
+         "result": {
+            "object": "No bird",
+            "common_name": "N/A",
+            "latin_name": "N/A",
+            "probability": 0
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 214586977401279101
+      },
+      {
+         "file_name": "bafb944f-a4c1-4146-99fd-a7af39804b35.jpg",
+         "date": "21-11-2024 08:27:54",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Eurasian magpie",
+            "latin_name": "Pica pica",
+            "probability": 85
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 334638609777239139
+      },
+      {
+         "file_name": "2c02d7a9-946b-46d5-b59f-b3e987970226.jpg",
+         "date": "21-11-2024 08:27:57",
+         "is_check": true,
+         "result": {
+            "object": "none",
+            "common_name": "No bird",
+            "latin_name": "No bird",
+            "probability": 0
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 283674962813076861
+      },
+      {
+         "file_name": "2c18c4a1-0bca-424a-88c3-89c3e80a29b6.jpg",
+         "date": "21-11-2024 08:27:59",
+         "is_check": true,
+         "result": {
+            "object": "craft item",
+            "common_name": "Not applicable",
+            "latin_name": "Not applicable",
+            "probability": 0
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 157100585443300174
+      },
+      {
+         "file_name": "7c7a92cc-43e2-46b8-8296-80cfcf173aa3.jpg",
+         "date": "21-11-2024 13:55:35",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Song Thrush",
+            "latin_name": "Turdus philomelos",
+            "probability": 90
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 283901170699977748
+      },
+      {
+         "file_name": "9a07f249-97e1-443f-a8f9-b79111442408.jpg",
+         "date": "21-11-2024 13:55:38",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Song Thrush",
+            "latin_name": "Turdus philomelos",
+            "probability": 90
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 130740376540159360
+      },
+      {
+         "file_name": "60c3d44e-111c-4cba-96f6-4abca61e2fce.jpg",
+         "date": "21-11-2024 13:55:41",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Song Thrush",
+            "latin_name": "Turdus philomelos",
+            "probability": 90
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 219202563514079570
+      },
+      {
+         "file_name": "bb8e1565-4c42-458d-9b84-50e7c4b6788c.jpg",
+         "date": "21-11-2024 13:55:42",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Song Thrush",
+            "latin_name": "Turdus philomelos",
+            "probability": 95
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 313358698936519843
+      },
+      {
+         "file_name": "7089f103-69c6-4869-b6e4-c3fbbd1b0b00.jpg",
+         "date": "21-11-2024 13:55:43",
+         "is_check": true,
+         "result": {
+            "object": "bird",
+            "common_name": "Song Thrush",
+            "latin_name": "Turdus philomelos",
+            "probability": 95
+         },
+         "coordinates": "47.82291044072433, 35.0928351908966",
+         "id": 115977151721894680
+      }
+   ]
+}

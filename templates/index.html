@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo of Birds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #D9D9D9;
+            color: #353535;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2em;
+            color: #284B63;
+            text-align: center;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+            background-color: #FFFFFF;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container img {
+            width: 20%;
+            max-width: 200px;
+            height: auto;
+            padding: 10px 20px;
+        }
+
+        .subheading {
+            font-size: 1.2em;
+            color: #3C6E71;
+            text-align: center;
+            margin-top: 3px;
+            font-style: normal;
+        }
+
+        .image-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container h2 {
+            font-size: 1.3em;
+            color: #3C6E71;
+            margin-bottom: 5px;
+        }
+
+        .image-container h3 {
+            font-size: 1.3em;
+            color: #3C6E71;
+            margin: 0 0 10px 0;
+        }
+
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        li {
+            padding: 5px 0;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        strong {
+            color: #3C6E71;
+        }
+
+        p {
+            color: #353535;
+            font-style: italic;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #FFFFFF;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            color: #3C6E71;
+            font-size: 1em;
+        }
+
+        .footer-left,
+        .footer-right {
+            width: 45%;
+            text-align: center;
+            padding: 2% 5%;
+        }
+
+        footer a {
+            color: #284B63;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="{{ url_for('static', filename='images/sichoviy_colegium_logo.png') }}"
+            alt="Logo of Sichovyi kolegium">
+        <div>
+            <h1>Bird Analysis Results</h1>
+            <p class="subheading">Мобільна автономна система моніторингу біорізноманіття птахів</p>
+        </div>
+        <img src="{{ url_for('static', filename='images/logo_STEAM.png') }}" alt="Logo of STEAM house">
+    </div>
+
+
+    {% for image in images_data %}
+    <div class="image-container">
+        <div class="image-wrapper">
+            <h2>Image</h2>
+            <img src="{{ image.image_display_path }}" alt="Bird Image">
+        </div>
+        <div class="text-container">
+            <h3>Analysis Result</h3>
+            {% if image.response_text %}
+            <ul>
+                {% for key, value in image.response_text.items() %}
+                <li><strong>{{ key | capitalize }}:</strong> {{ value }}</li>
+                {% endfor %}
+                <li><strong>Date:</strong> {{ image.date }}</li>
+                <li><strong>Coordinates:</strong> {{ image.coordinates }}</li>
+            </ul>
+            {% else %}
+            <p>No analysis available.</p>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+    {% if not images_data %}
+    <p>No analyzed images found.</p>
+    {% endif %}
+
+</body>
+<footer>
+    <div class="footer-left">
+        <p>This project was implemented by the SichEco team
+            from the Sichovyi Colegium school.</p>
+        <p>Developed by Ilariya Solyona, 2024</p>
+    </div>
+    <div class="footer-right">
+        <p style="font-weight: bold;">Contacts</p>
+        <p>Email: <a href="mailto:sicheco@zski.com.ua">sicheco@zski.com.ua</a></p>
+        <p><a href="https://zski.com.ua/">zski.com.ua</a></p>
+    </div>
+</footer>
+
+</html>
