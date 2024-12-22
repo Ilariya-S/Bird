@@ -7,9 +7,12 @@ import uuid
 from def_analisis_images_openai import image_analysis_openai
 from pysondb import db
 from datetime import datetime
+from dotenv import load_dotenv
+from key import key
 
+load_dotenv()
 app = Flask(__name__)
-
+app.config['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
 
 app.config['UPLOAD_FOLDER'] = '/var/www/bird/images'
 if not os.path.exists(app.config['UPLOAD_FOLDER']):
@@ -131,5 +134,9 @@ def index():
 def test():
      return "Server is running!", 200
 
+@app.route('/test-key')
+def api_key_test():
+    test_key=key()
+    return test_key
 if __name__ == '__main__':
     app.run(debug=True)

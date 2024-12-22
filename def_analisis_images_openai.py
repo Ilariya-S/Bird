@@ -2,14 +2,22 @@ import base64
 from openai import OpenAI
 import json
 
-   
+
+
+def key():
+    from app import app
+    with app.app_context():
+        Apikey = app.config['OPENAI_API_KEY']
+    return Apikey
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
 def image_analysis_openai(image_path):
     base64_image = encode_image(image_path)
-        
+    client = OpenAI(
+        api_key=key(),
+    )
     response = client.chat.completions.create(
         model="gpt-4-turbo",
         messages=[
